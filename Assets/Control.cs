@@ -32,10 +32,5 @@ public class Control : MonoBehaviour
         //di chuyen nhan vat
         main.transform.Translate(Vector3.right*toc_do*huong*Time.deltaTime);
         //nhay
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && nhay == true)
-        {
-            rb.AddForce(Vector2.up * chieu_cao, ForceMode2D.Impulse);
-            nhay= false;
-        }
     }
 }
